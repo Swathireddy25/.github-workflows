@@ -34,13 +34,13 @@ jobs:
           pytest
 
       - name: Archive Pytest test report
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         with:
           name: SuperTest-test-report
           path: report
           
       - name: Upload Pytest report to GitHub
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         with:
           name: Pytest-test-report
           path: report
